@@ -51,10 +51,28 @@ MSCKF (Multi-State Constraint Kalman Filter) is an Extended Kalman Filter (EKF) 
 
 ### Problem Statement
 
+![image](https://github.com/rkulkarni1999/deep-undeep-visual-inertial-odometry/assets/74806736/d9f96d9b-3350-4e37-9a2a-25fa6a2a3dd0)
+
 ### Dataset Generation using Blender
 
+![deep-vio-data-generation-video](https://github.com/rkulkarni1999/deep-undeep-visual-inertial-odometry/assets/74806736/7133df37-c689-4976-9f36-2e202eb2e9fb)
+
+![image](https://github.com/rkulkarni1999/deep-undeep-visual-inertial-odometry/assets/74806736/97ecc9e3-3080-4def-8501-886420771a16)
 
 ### Networks Used 
 
+#### Deep Visual Odometry Network
+
+![image](https://github.com/rkulkarni1999/deep-undeep-visual-inertial-odometry/assets/74806736/3f901056-60c8-42b2-aed1-cd8945802582)
+
+#### Deep Inertial Odometry Network
+
+![image](https://github.com/rkulkarni1999/deep-undeep-visual-inertial-odometry/assets/74806736/98b6094e-c988-4e79-b499-95bdebfa0f00)
+
+#### Deep Visual Inertial Odometry Network
+
+![image](https://github.com/rkulkarni1999/deep-undeep-visual-inertial-odometry/assets/74806736/706475c0-47b0-4a28-82a6-3fccd8dd39c9)
+
 
 ### Final Output [will be uploaded soon]
+
