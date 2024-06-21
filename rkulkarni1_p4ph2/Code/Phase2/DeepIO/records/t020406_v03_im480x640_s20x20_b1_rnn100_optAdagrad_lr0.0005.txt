@@ -1,0 +1,189 @@
+
+==================================================
+n_processors: 4
+data_dir: /home/pear_group/rutwik/P4/DeepIO/KITTI
+image_dir: /home/pear_group/rutwik/P4/DeepIO/KITTI/images/
+pose_dir: /home/pear_group/rutwik/P4/DeepIO/KITTI/pose_GT/
+logs_dir: /home/pear_group/rutwik/P4/DeepIO/logs
+train_video: ['02', '04', '06']
+valid_video: ['03']
+partition: None
+resize_mode: rescale
+img_w: 640
+img_h: 480
+img_means: (0.43883678312513563, 0.5012926410251194, 0.38941848208957247)
+img_stds: (0.138914753170523, 0.1736260063570044, 0.12743154318678268)
+minus_point_5: True
+seq_len: (20, 20)
+sample_times: 3
+train_data_info_path: datainfo/train_df_t020406_v03_pNone_seq20x20_sample3.pickle
+valid_data_info_path: datainfo/valid_df_t020406_v03_pNone_seq20x20_sample3.pickle
+rnn_hidden_size: 100
+conv_dropout: (0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.5)
+rnn_dropout_out: 0.5
+rnn_dropout_between: 0
+clip: None
+batch_norm: True
+epochs: 50
+batch_size: 1
+pin_mem: True
+optim: {'opt': 'Adagrad', 'lr': 0.0005}
+pretrained_flownet: None
+resume: False
+resume_t_or_v: .train
+load_model_path: models/t020406_v03_im480x640_s20x20_b1_rnn100_optAdagrad_lr0.0005.model.train
+load_optimizer_path: models/t020406_v03_im480x640_s20x20_b1_rnn100_optAdagrad_lr0.0005.optimizer.train
+record_path: records/t020406_v03_im480x640_s20x20_b1_rnn100_optAdagrad_lr0.0005.txt
+save_model_path: models/t020406_v03_im480x640_s20x20_b1_rnn100_optAdagrad_lr0.0005.model
+save_optimzer_path: models/t020406_v03_im480x640_s20x20_b1_rnn100_optAdagrad_lr0.0005.optimizer
+==================================================
+Epoch 1
+train loss mean: 1.7053465402935766, std: 2.55
+valid loss mean: 0.015561694301239284, std: 0.01
+Epoch 2
+train loss mean: 0.31992005862228506, std: 0.35
+valid loss mean: 0.006909766925341623, std: 0.00
+Epoch 3
+train loss mean: 0.17011169511074964, std: 0.22
+valid loss mean: 0.0042937108282416914, std: 0.00
+Epoch 4
+train loss mean: 0.11311809602032939, std: 0.16
+valid loss mean: 0.003087148939372939, std: 0.00
+Epoch 5
+train loss mean: 0.08542073804559763, std: 0.13
+valid loss mean: 0.0024013572953749274, std: 0.00
+Epoch 6
+train loss mean: 0.06837245324745996, std: 0.10
+valid loss mean: 0.0020731566503000803, std: 0.00
+Epoch 7
+train loss mean: 0.05731834412805043, std: 0.09
+valid loss mean: 0.0017579392859144373, std: 0.00
+Epoch 8
+train loss mean: 0.04926256607500323, std: 0.08
+valid loss mean: 0.0015488818298333197, std: 0.00
+Epoch 9
+train loss mean: 0.04352189583125011, std: 0.07
+valid loss mean: 0.0013547419235151578, std: 0.00
+Epoch 10
+train loss mean: 0.038615708572939875, std: 0.06
+valid loss mean: 0.001338173104013119, std: 0.00
+Epoch 11
+train loss mean: 0.0347564968257085, std: 0.05
+valid loss mean: 0.0012796067191454706, std: 0.00
+Epoch 12
+train loss mean: 0.031757512230719306, std: 0.05
+valid loss mean: 0.001157127386233168, std: 0.00
+Epoch 13
+train loss mean: 0.029328978866029042, std: 0.04
+valid loss mean: 0.001086028749324595, std: 0.00
+Epoch 14
+train loss mean: 0.027244687620508443, std: 0.04
+valid loss mean: 0.0010566019995830837, std: 0.00
+Epoch 15
+train loss mean: 0.02554081929838913, std: 0.04
+valid loss mean: 0.0010045823875872418, std: 0.00
+Epoch 16
+train loss mean: 0.024003919414320302, std: 0.04
+valid loss mean: 0.0009343411056300505, std: 0.00
+Epoch 17
+train loss mean: 0.022442231902213942, std: 0.03
+valid loss mean: 0.0008468427815196756, std: 0.00
+Epoch 18
+train loss mean: 0.02118685732895002, std: 0.03
+valid loss mean: 0.00081266093704127, std: 0.00
+Epoch 19
+train loss mean: 0.020121450733342074, std: 0.03
+valid loss mean: 0.0007623944592818884, std: 0.00
+Epoch 20
+train loss mean: 0.019093801914939767, std: 0.03
+valid loss mean: 0.0007459705661735701, std: 0.00
+Epoch 21
+train loss mean: 0.018135847542920157, std: 0.03
+valid loss mean: 0.0007273051409943282, std: 0.00
+Epoch 22
+train loss mean: 0.017386934626520988, std: 0.03
+valid loss mean: 0.0007180330244686096, std: 0.00
+Epoch 23
+train loss mean: 0.016712932659852863, std: 0.03
+valid loss mean: 0.0006851209008287524, std: 0.00
+Epoch 24
+train loss mean: 0.016000386939119815, std: 0.02
+valid loss mean: 0.0006705454988522237, std: 0.00
+Epoch 25
+train loss mean: 0.015447353646777628, std: 0.02
+valid loss mean: 0.0006830755527873309, std: 0.00
+Epoch 26
+train loss mean: 0.014891373210468111, std: 0.02
+valid loss mean: 0.0006515863225577296, std: 0.00
+Epoch 27
+train loss mean: 0.014447315216635238, std: 0.02
+valid loss mean: 0.0006654485565512594, std: 0.00
+Epoch 28
+train loss mean: 0.013988273049550559, std: 0.02
+valid loss mean: 0.0006411784124808848, std: 0.00
+Epoch 29
+train loss mean: 0.01364652813148299, std: 0.02
+valid loss mean: 0.0006293082436633773, std: 0.00
+Epoch 30
+train loss mean: 0.013174590181893724, std: 0.02
+valid loss mean: 0.0006265499878420112, std: 0.00
+Epoch 31
+train loss mean: 0.012917873457919652, std: 0.02
+valid loss mean: 0.0006101876246927188, std: 0.00
+Epoch 32
+train loss mean: 0.0124743024797095, std: 0.02
+valid loss mean: 0.0006088663574845472, std: 0.00
+Epoch 33
+train loss mean: 0.012228508526779298, std: 0.02
+valid loss mean: 0.0005953370958078833, std: 0.00
+Epoch 34
+train loss mean: 0.01186811013297113, std: 0.02
+valid loss mean: 0.0005858388419910256, std: 0.00
+Epoch 35
+train loss mean: 0.011617174454229556, std: 0.02
+valid loss mean: 0.0005847664078214006, std: 0.00
+Epoch 36
+train loss mean: 0.011265885062616608, std: 0.02
+valid loss mean: 0.0005712089094406627, std: 0.00
+Epoch 37
+train loss mean: 0.010961045700428216, std: 0.02
+valid loss mean: 0.0005637600627300946, std: 0.00
+Epoch 38
+train loss mean: 0.010702492312736615, std: 0.02
+valid loss mean: 0.0005596191772352737, std: 0.00
+Epoch 39
+train loss mean: 0.010483391444869117, std: 0.02
+valid loss mean: 0.0005457229784010021, std: 0.00
+Epoch 40
+train loss mean: 0.010281080590554362, std: 0.02
+valid loss mean: 0.0005314464978619379, std: 0.00
+Epoch 41
+train loss mean: 0.010005271649899098, std: 0.02
+valid loss mean: 0.0005127119234471691, std: 0.00
+Epoch 42
+train loss mean: 0.009808379900323006, std: 0.02
+valid loss mean: 0.0005075960267688699, std: 0.00
+Epoch 43
+train loss mean: 0.009618644040804545, std: 0.02
+valid loss mean: 0.0005012758769321163, std: 0.00
+Epoch 44
+train loss mean: 0.00941326252746581, std: 0.02
+valid loss mean: 0.0004978116176484516, std: 0.00
+Epoch 45
+train loss mean: 0.009289648717746892, std: 0.01
+valid loss mean: 0.0004909518459474359, std: 0.00
+Epoch 46
+train loss mean: 0.009094201477140658, std: 0.01
+valid loss mean: 0.000486378321456131, std: 0.00
+Epoch 47
+train loss mean: 0.008955763508251662, std: 0.01
+valid loss mean: 0.0004871352127885394, std: 0.00
+Epoch 48
+train loss mean: 0.008784206096055772, std: 0.01
+valid loss mean: 0.00047080188508015746, std: 0.00
+Epoch 49
+train loss mean: 0.008640615104795173, std: 0.01
+valid loss mean: 0.0004654287322279214, std: 0.00
+Epoch 50
+train loss mean: 0.008480018040916195, std: 0.01
+valid loss mean: 0.0004627514954666527, std: 0.00

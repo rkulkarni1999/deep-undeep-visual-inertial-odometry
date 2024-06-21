@@ -1,0 +1,38 @@
+
+==================================================
+n_processors: 4
+data_dir: /home/ankit/Documents/STUDY1/RBE594/p4ph2/DeepVIO/KITTI
+image_dir: /home/ankit/Documents/STUDY1/RBE594/p4ph2/DeepVIO/KITTI/images/
+pose_dir: /home/ankit/Documents/STUDY1/RBE594/p4ph2/DeepVIO/KITTI/pose_GT/
+train_video: ['04']
+valid_video: ['04']
+partition: None
+resize_mode: rescale
+img_w: 640
+img_h: 480
+img_means: (0.43883678312513563, 0.5012926410251194, 0.38941848208957247)
+img_stds: (0.138914753170523, 0.1736260063570044, 0.12743154318678268)
+minus_point_5: True
+seq_len: (5, 5)
+sample_times: 3
+train_data_info_path: datainfo/train_df_t04_v04_pNone_seq5x5_sample3.pickle
+valid_data_info_path: datainfo/valid_df_t04_v04_pNone_seq5x5_sample3.pickle
+rnn_hidden_size: 1000
+conv_dropout: (0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.5)
+rnn_dropout_out: 0.5
+rnn_dropout_between: 0
+clip: None
+batch_norm: True
+epochs: 50
+batch_size: 4
+pin_mem: True
+optim: {'opt': 'Adagrad', 'lr': 0.0005}
+pretrained_flownet: None
+resume: False
+resume_t_or_v: .train
+load_model_path: models/t04_v04_im480x640_s5x5_b4_rnn1000_optAdagrad_lr0.0005.model.train
+load_optimizer_path: models/t04_v04_im480x640_s5x5_b4_rnn1000_optAdagrad_lr0.0005.optimizer.train
+record_path: records/t04_v04_im480x640_s5x5_b4_rnn1000_optAdagrad_lr0.0005.txt
+save_model_path: models/t04_v04_im480x640_s5x5_b4_rnn1000_optAdagrad_lr0.0005.model
+save_optimzer_path: models/t04_v04_im480x640_s5x5_b4_rnn1000_optAdagrad_lr0.0005.optimizer
+==================================================
