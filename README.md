@@ -46,4 +46,5 @@ MSCKF (Multi-State Constraint Kalman Filter) is an Extended Kalman Filter (EKF) 
 - Final Output
 
 
+![classsical-vio-final-output-ezgif com-video-to-gif-converter](https://github.com/rkulkarni1999/deep-undeep-visual-inertial-odometry/assets/74806736/74d8fd32-e5ca-4ea2-8a37-bd0bcb96a9ae)
 
